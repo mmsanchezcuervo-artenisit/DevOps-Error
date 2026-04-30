@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-const metrics = require('./metrics'); // <-- módulo que no existe
+//const metrics = require('./metrics'); // <-- módulo que no existe
 
 // ============================================
 // EÓLICA NARANCO S.L. - Sistema de monitorización
