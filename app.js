@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-const metrics = require('./metrics'); // <-- módulo que no existe
+// const metrics = require('./metrics'); // <-- Comenta esto
 
 // ============================================
 // EÓLICA NARANCO S.L. - Sistema de monitorización
@@ -26,7 +26,7 @@ const aerogeneradores = [
 
 function paginaPrincipal() {
   const operativos = aerogeneradores.filter(a => a.estado === 'operativo').length;
-  const stats = metrics.getStats(); // usa el módulo roto
+// const stats = metrics.getStats(); // <-- Comenta esto
 
   return `<!DOCTYPE html>
 <html lang="es">
@@ -68,7 +68,7 @@ function paginaPrincipal() {
       <div class="stat"><span class="n">${aerogeneradores.length}</span><span class="l">Total</span></div>
       <div class="stat"><span class="n">${operativos}</span><span class="l">Operativos</span></div>
       <div class="stat"><span class="n">${aerogeneradores.length - operativos}</span><span class="l">Mantenimiento</span></div>
-      <div class="stat"><span class="n">${stats.uptime}s</span><span class="l">Uptime</span></div>
+      <div class="stat"><span class="n"</span><span class="l">Uptime</span></div>
     </div>
     <table>
       <tr><th>ID</th><th>Sector</th><th>Estado</th></tr>
