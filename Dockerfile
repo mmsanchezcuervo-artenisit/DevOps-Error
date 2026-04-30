@@ -1,5 +1,5 @@
 FROM node:18-alpine
 WORKDIR /app
 COPY app.js .
-EXPOSE 3000
+EXPOSE 8081
 CMD ["node", "app.js"]
